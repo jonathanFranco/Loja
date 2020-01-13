@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta author="Jonathan Franco">
+  <meta name="theme-color" content="#ff9800">
+  <meta name="msapplication-navbutton-color" content="#ff9800">
+  <title>Conheça a Gustavo.com</title>
+  <link rel="icon" href="img/icone.png" type="image/png" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/mdb.css">
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="js/mdb.js"></script>
+  <script type="text/javascript" src="js/side-menu.js"></script>
+  <script type="text/javascript" src="js/loading.js"></script>
+  <script type="text/javascript" src="js/velocity.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+</head>
+
+<body onload="loading();" data-spy="scroll" data-target=".navbar" data-offset="100">
+
+  <div id="background-load">
+    <div class="load"></div>
+  </div>
+
+  <!-- Main Navigation -->
+<header id="home">
+  <!--Desktop Menu-->
+    <nav id="nav-color" class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" style="font-family: 'Josefin Sans', sans-serif;">
+      <div class="container nav-effect">
+        <a class="navbar-brand" href="index.html" style="color: #fff3e0"><img src="img/logo.png"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+          <ul class="ml-2 nav nav-pills smooth-scroll">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#avaliacoes">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+              <a id="face-icon" class="nav-link waves-effect waves-light">
+                <i class="fab fa-facebook-f h5-responsive"></i></a>
+            </li>
+            <li class="nav-item">
+              <a id="insta-icon" class="nav-link waves-effect waves-light">
+                <i  class="fab fa-instagram h5-responsive"></i></a>
+            </li>
+            <li class="nav-item">
+              <a id="whatsapp-icon" class="nav-link waves-effect waves-light">
+                <i  class="fab fa-whatsapp h5-responsive"></i></a>
+            </li>
+            <li class="nav-item">
+              <a id="maps-icon" class="nav-link waves-effect waves-light">
+                <i  class="fas fa-map-marker-alt h5-responsive"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Desktop Menu-->
+
+      <!--Mobile Menu-->
+      <div class="btn-menu">
+        <i class="fas fa-bars my-2 mr-3 h2 btn-menu" onclick="openNav()"></i>
+        <span class="logo-mobile h2"><img src="img/logo.png"></span>
+      </div>
+
+      <div id="myNav" class="nav-mobile blue-gradient" style="overflow: hidden;font-family: 'Josefin Sans', sans-serif;border: 0px!important">
+      <div id="side-menu-nav" class="my-4 ml-3">
+      <span class="logo-mobile mr-auto mt-2 h2"><img src="img/logo.png"></span>
+      <span id="close-btn" class="closebtn mr-2 h2" onclick="closeNav()"><i class="h2 fas fa-times"></i></span>
+      </div>
+
+        <hr class="mb-3 white">
+
+        <div class="container navbar-light nav-mobile-content text-left navbar-nav mobile-pills text-uppercase" id="menu-content">
+          <li class="nav-item mobile-pills"  onclick="closeNav()">
+            <a class="nav-link" href="#home"><i class="fas fa-home"></i> Home</a>
+          </li>
+
+          <li class="nav-item mobile-pills"  onclick="closeNav()">
+            <a class="nav-link" href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a>
+          </li>
+
+          <li class="nav-item mobile-pills"  onclick="closeNav()">
+            <a class="nav-link" href="#avaliacoes"><i class="fas fa-star"></i> Galeria</a>
+          </li>
+
+          <li class="nav-item mobile-pills"  onclick="closeNav()">
+            <a class="nav-link" href="#contato"><i class="fas fa-envelope"></i> Contato</a>
+          </li>
+
+          <li class="row justify-content-center mt-5 py-5" style="color: #fff3e0;">
+            <a><i class="fab fa-facebook-f mx-1"></i></a>
+            <a><i class="fab fa-instagram mx-1"></i></a>
+            <a><i class="fab fa-whatsapp mx-1"></i></a>
+            <a><i class="fas fa-map-marker-alt mx-1"></i></a>
+          </li>
+          
+        </div>
+      </div>
+      <!--Mobile Menu-->
+
+  </nav>
+
+<!--Index-->
+<div onclick="closeNav()" id="intro" class="view smooth-scroll" style="background-image: url('img/index.jpg');background-size: cover;background-position: center;font-family: 'Baloo Bhai', cursive;">
+
+<div class="mask text-center rgba-black-light">
+  
+          <div class="container-fluid d-flex justify-content-center align-items-center h-100">
+
+            <div class="col-md-12 text-center white-text">
+              <div class="wow fadeInDown" data-wow-delay="0.2s">
+                <h1 class="white-text display-4 font-weight-bold mt-5 mt-xl-2">
+                  <em>Seja Bem Vindo</em>
+                </h1>
+
+                <!--Rating-->
+                <ul class="rating mt-3">
+                  <li>
+                    <i class="fas fa-star green-text"></i>
+                    <i class="fas fa-star yellow-text"></i>
+                    <i class="fas fa-star orange-text"></i>
+                    <i class="fas fa-star red-text"></i>
+                    <i class="fas fa-star blue-text"></i>
+                  </li>
+                </ul>
+
+                <h4 class="text-uppercase white-text mb-5 mt-3 font-weight-bold spacing">Moda Infantil é aqui</h4>
+
+                <a id="shadow-effect" href="#down"><i class="display-4 py-4 fas fa-chevron-circle-down amber-text"></i></a>  
+
+              </div>
+            </div>
+
+        </div>
+  
+</div>
+</div>
+
+
+</header>
+  <!-- Main Navigation -->
+
+  <!-- Main content -->
+  <main onclick="closeNav()">
+
+    <!--Introduções-->
+    <section id="down" class="white-color" style="overflow: hidden;">
+      <div class="row">
+        <div class="col-md-4 light-green accent-2 py-5">
+          <div class="p-5 wow bounceIn" data-wow-delay="0.4s">
+            <!-- Heading -->
+            <h1 class="font-weight-bold white-text text-left"><i class="fas fa-dollar-sign"></i> EXEMPLO</h1>
+            <!-- Description -->
+            <h5 class="white-text px-3" style="border-left: 4px solid #fff">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h5>    
+          </div>
+        </div>
+        <div class="col-md-4 light-blue lighten-1 py-5">
+          <div class="p-5 wow bounceIn" data-wow-delay="0.5s">
+            <!-- Heading -->
+            <h1 class="font-weight-bold white-text text-left"><i class="fas fa-thumbs-up"></i> EXEMPLO</h1>
+            <!-- Description -->
+            <h5 class="white-text px-3" style="border-left: 4px solid #fff">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h5>    
+          </div>
+        </div>
+        <div class="col-md-4 deep-purple lighten-2 py-5">
+          <div class="p-5 wow bounceIn" data-wow-delay="0.6s">
+            <!-- Heading -->
+            <h1 class="font-weight-bold white-text text-left"><i class="fas fa-award"></i> EXEMPLO</h1>
+            <!-- Description -->
+            <h5 class="white-text px-3" style="border-left: 4px solid #fff">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h5>    
+          </div>
+        </div>
+        
+      </div>
+  </section>
+  <!--Introduções-->
+
+      <!--Sobre-->
+      <section id="sobre" class="container py-5">
+
+        <!--Section heading-->
+        <div class="row mt-5 mb-4 justify-content-left d-flex align-items-center">
+          <div class=" mb-5">
+              <h3 class="text-left px-3 text-uppercase font-weight-bold mr-3 ml-3 wow fadeIn" data-wow-delay="0.2s" style="border-left: 3px solid #ff4444">Sobre nós</h3>
+        </div>
+
+        <!--First row-->
+        <div class="row smooth-scroll px-3">
+
+          <!--Second column-->
+          <div class="col-lg-5 ml-auto col-md-12 mb-5 wow fadeIn" data-wow-delay="0.4s">
+
+            <!--Image-->
+            <img src="img/sobre.jpg" alt="" class="z-depth-0 img-fluid w-100 h-100">
+
+          </div>
+          <!--/Second column-->
+
+          <!--First column-->
+          <div class="col-lg-7 col-md-12 wow fadeIn" data-wow-delay="0.4s">
+
+            <!--Title-->
+            <h4 class="mb-4 text-left text-danger">Conheça a Gustavo.com</h4>
+
+            <!--Description-->
+            <p class="grey-text mb-4" align="justify">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum
+              deleniti atque corrupti quos dolores et quas molstias excepturi sint occaecati cupiditate non
+              provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
+              fuga.At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum
+              deleniti atque corrupti quos dolores et quas molstias excepturi sint occaecati cupiditate non
+              provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
+              fuga.
+            </p>
+
+          </div>
+          <!--/First column-->
+
+        </div>
+        <!--/First row-->
+
+      </section>
+      <!--Sobre-->
+
+      <!--Promoção-->
+      <section id="promo">
+        <div class="streak streak-photo streak-md" style="background-image: url('img/index2.jpg');background-attachment: fixed;background-repeat: no-repeat;background-size: cover">
+          <div class="flex-center mask rgba-blue-strong">
+            <div class="text-center white-text container wow pulse" data-wow-delay="0.4s">
+              <i class="fas fa-info-circle display-2 mb-4"></i>
+              <p class="h1-responsive"> Aproveite Nossas Promoções e entre em contato conosco por email ou pelas redes sociais.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Promoção-->
+
+      <!--Avaliações-->
+      <section id="avaliacoes" class="py-0 pt-5 container">
+        <!--Title-->
+        <div class="row mt-5 mb-4 justify-content-center d-flex align-items-left">
+          <div class="col-md-8 mb-3">
+              <h3 class="text-left col-md-2 text-uppercase font-weight-bold mr-3 ml-3 wow fadeIn" data-wow-delay="0.2s" style="border-left: 3px solid orange">Galeria</h3>
+              <div class="justify-content-left">
+            <p class="grey-text mb-4 mt-3 px-2" align="justify">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum
+              deleniti atque corrupti quos dolores et quas molstias excepturi sint occaecati cupiditate non
+              provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
+              fuga.
+            </p>
+      </div>
+          </div>
+
+        </div>
+
+
+        <div class="row py-0 my-0">
+        <!--Carousel Wrapper-->
+        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+
+            <!--First slide-->
+            <div class="carousel-item active">
+
+              <div class="col-md-4">
+
+          <img src="img/c1.jpg" class="w-100" style="height: 350px">
+
+              </div>
+
+              <div class="col-md-4 clearfix d-none d-md-block">
+          <img src="img/c2.jpg" class="w-100" style="height: 350px">
+
+              </div>
+
+              <div class="col-md-4 clearfix d-none d-md-block">
+          <img src="img/c3.jpg" class="w-100" style="height: 350px">
+
+              </div>
+
+            </div>
+            <!--/.First slide-->
+
+            <!--Second slide-->
+            <div class="carousel-item">
+
+              <div class="col-md-4">
+          <img src="img/c4.jpg" class="w-100" style="height: 350px">
+
+              </div>
+
+              <div class="col-md-4 clearfix d-none d-md-block">
+          <img src="img/c5.jpg" class="w-100" style="height: 350px">
+
+              </div>
+
+              <div class="col-md-4 clearfix d-none d-md-block">
+          <img src="img/c6.jpg" class="w-100" style="height: 350px">
+
+              </div>
+
+            </div>
+            <!--/.Second slide-->
+
+            <!--Third slide-->
+            <div class="carousel-item">
+
+              <div class="col-md-4">
+          <img src="img/c7.jpg" class="w-100" style="height: 350px">
+
+              </div>
+
+              <div class="col-md-4 clearfix d-none d-md-block">
+          <img src="img/c8.jpg" class="w-100" style="height: 350px">
+
+              </div>
+
+              <div class="col-md-4 clearfix d-none d-md-block">
+          <img src="img/c9.jpg" class="w-100" style="height: 350px">
+
+              </div>
+
+            </div>
+            <!--/.Third slide-->
+
+          </div>
+          <!--/.Slides-->
+
+          <!--Controls-->
+          <div class="controls-top mt-3">
+            <a class="btn-floating orange" href="#multi-item-example" data-slide="prev">
+              <i class="fas fa-chevron-left info-text"></i>
+            </a>
+            <a class="btn-floating orange" href="#multi-item-example" data-slide="next">
+              <i class="fas fa-chevron-right info-text"></i>
+            </a>
+          </div>
+          <!--/.Controls-->
+
+        </div>
+        <!--/.Carousel Wrapper-->
+
+        </div>
+
+          
+      </section>
+      <!--Avaliações-->
+
+      <div class="container"><hr></div>
+
+      <!--Contato-->
+      <section id="contato" class="py-5 container">
+
+        <!--Title-->
+        <div class="row mt-5 mb-4 justify-content-center d-flex align-items-left">
+          <div class="col-md-8 mb-3">
+              <h3 class="text-left col-md-6 text-uppercase font-weight-bold mr-3 ml-3 wow fadeIn" data-wow-delay="0.2s" style="border-left: 3px solid #00C851">Entre em Contato</h3>
+              <div class="justify-content-left">
+            <p class="grey-text mb-4 mt-3 px-2 wow fadeIn" data-wow-delay="0.2s" align="justify">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum
+              deleniti atque corrupti quos dolores et quas molstias excepturi sint occaecati cupiditate non
+              provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
+              fuga.
+            </p>
+      </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-lg-5 my-5 wow fadeIn" data-wow-delay="0.4s">
+
+            <!--Form-->
+            <form method="POST" action="send_email.php" class="card p-4 text-center border border-light">
+
+              <!-- Default form contact -->
+
+              <p class="h3-responsive green-text"><i class="fas fa-mail-bulk"></i> Mande sua Mensagem</p>
+
+              <hr class="green mb-4 mt-0">
+
+              <!-- Name -->
+              <input type="text" class="form-control mb-4 field-icon" placeholder="Seu Nome" name="nome" id="nome" required="">
+
+              <!-- Email -->
+              <input type="email" class="form-control mb-4 field-icon" placeholder="Seu Email" name="email" id="email" required="">
+
+              <!-- Message -->
+              <div class="form-group">
+                <textarea class="form-control rounded-0 mb-4 field-icon" placeholder="Sua Mensagem" name="msg" id="msg" required=""rows="3"></textarea>
+              </div>
+
+
+              <div class="text-center mt-4">
+                <button type="reset" class="btn btn-outline-green btn-rounded btn-md">Limpar</button>
+                <button class="btn btn-green btn-rounded btn-md">Enviar</button>
+              </div>
+
+            </form>
+            <!--Form-->
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-7 my-5 wow fadeIn" data-wow-delay="0.4s">
+
+            <!--Google map-->
+            <div id="map-container-google-2" class="z-depth-1-half map-container" style="border:2px solid green;border-radius: 10px">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254789.90439919173!2d-38.65903351736688!3d-3.7900894045859563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74c3f464c783f%3A0x4661c60a0c6b37ca!2sFortaleza+-+CE!5e0!3m2!1spt-BR!2sbr!4v1566527351865!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+            </div>
+            <div class="row my-4 grey-text">
+              <div class="col-md-12">
+                <p class="h6-responsive"><i class="fas fa-map-marked mr-3"></i><b>Endereço do Estabelecimento</b></p>
+                <p class="h6-responsive"><i class="fas fa-clock mr-3"></i>Seg - Sex: 8:00 às 18:00. Sáb: 08:00 às 12:00</p>
+              </div>
+
+            </div>
+
+            <!--Google Maps-->
+
+            <br>
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+
+      </section>
+      <!--Contato-->
+
+  </main>
+
+<!-- Footer -->
+<footer onclick="closeNav()" class="page-footer font-small primary-color">
+  <div class="orange lighten-2 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container">
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h4 class="mb-0 font-weight-bold">Siga nossas redes sociais!!!</h4>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+          <!-- Facebook -->
+          <a class="btn-floating btn-sm bg-primary mx-1">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Instagram -->
+          <a class="btn-floating btn-sm pink accent-2 mx-1">
+            <i class="fab fa-instagram white-text mr-4"> </i>
+          </a>
+          <!--Whatsapp-->
+          <a class="btn-floating btn-sm bg-success mx-1">
+            <i class="fab fa-whatsapp white-text mr-4"> </i>
+          </a>
+          <!--Maps-->
+          <a class="btn-floating btn-sm bg-secondary mx-1">
+            <i class="fas fa-map-marker-alt white-text"> </i>
+          </a>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row-->
+    </div>
+  </div>
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5 wow fadeIn" data-wow-delay="0.2s">
+    <!-- Grid row -->
+    <div class="row mt-3">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">NOME DA EMPRESA</h6>
+        <hr class="white accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+          consectetur
+          adipisicing elit.</p>
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 smooth-scroll text-uppercase">
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Mapa do Site</h6>
+        <hr class="white accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#home">Home</a>
+        </p>
+        <p>
+          <a href="#sobre">Sobre</a>
+        </p>
+        <p>
+          <a href="#avaliacoes">Galeria</a>
+        </p>
+        <p>
+          <a href="#contato">Contato</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Telefones</h6>
+        <hr class="white accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-phone mr-3"></i> (85) 99999-9999</p>
+        <p>
+          <i class="fas fa-print mr-3"></i> (85) 99999-9999</p>
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contato</h6>
+        <hr class="white accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© Copyright -
+    <strong> EMPRESA</strong>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<!-- Top Button -->
+<div id="btntop" class="fixed-action-btn smooth-scroll" style="display: none;">
+<a href="#home" class="btn-floating btn-md" id="btn-fixed-style" title="Voltar ao início" onclick="btn_top();"><i class="fas fa-angle-up"></i></a>
+</div>
+
+<!-- SCRIPTS -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/mdb.js"></script>
+<script type="text/javascript" src="js/animation.js"></script>
+<script type="text/javascript" src="js/side-menu.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+</body>
+
+</html>
