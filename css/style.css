@@ -301,6 +301,13 @@ header,
   background: #37474F; 
 }
 
+.c-mobile{
+  display: none;
+}
+.c-desktop{
+  display: initial;
+}
+
 
 @media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {
@@ -336,6 +343,12 @@ header,
   }
   .nav-link{
     font-size: 25px!important;
+  }
+  .c-mobile{
+    display: initial!important;
+  }
+  .c-desktop{
+    display: none!important;
   }
 
 }
@@ -374,6 +387,12 @@ header,
   }
   .nav-link{
     font-size: 25px!important;
+  }
+  .c-mobile{
+    display: initial!important;
+  }
+  .c-desktop{
+    display: none!important;
   }
 
 }
