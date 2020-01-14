@@ -61,7 +61,7 @@ header,
 
 .nav-pills > li > a.active {
   background-color: transparent!important;
-  color: #fff3e0!important;
+  color: #fff!important;
   border: 0px!important;
   border-radius: 0%!important;
   transform: scale(1.1);
@@ -85,7 +85,7 @@ header,
 }
 
 .nav-link:hover{
-  color: #ffffff!important;
+  color: #fff3e0!important;
   transition: 0.2s!important;
 }
 
@@ -113,7 +113,7 @@ header,
   top: 0;
   left: 0;
   transition: 0.3s;
-  background-image: linear-gradient(to right, #0d47a1, #3F729B);
+  background-image: linear-gradient(to right, #37474F, #263238);
   /*
   overflow-y: scroll!important;
   */
@@ -197,6 +197,18 @@ header,
   }
 }
 
+@keyframes fade{
+  from{
+    opacity: 0.7;
+  }to{
+    opacity: 1.0;
+  }
+}
+
+.c-sobre{
+  animation: fade 0.5s ease-in;
+}
+
 #background-load{
   height:100%;
   width:100%;
@@ -221,8 +233,8 @@ header,
 */
 
 #btn-fixed-style{
-  background-color: #0099CC!important;
-  opacity: 0.7;
+  background-color: #CC0000!important;
+  opacity: 0.1;
 }
 
 #btn-fixed-style:hover{
@@ -252,7 +264,13 @@ header,
 */
 
 #shadow-effect{
-  text-shadow: 10px 10px 20px black!important;
+  text-shadow: 5px 5px 10px rgba(0,0,0,0.4)!important;
+}
+
+.down-menu:hover{
+  transform: scale(1.1);
+  transition: 0.2s;
+
 }
 
 .card-img-top{
@@ -264,11 +282,11 @@ header,
   background-color: red!important;
 }
 
-.fa-chevron-down{
+.fa-angle-down{
   transition: 0.5s;
 }
 
-.fa-chevron-down:hover{
+.fa-angle-down:hover{
   transform: translateY(10px);
   transition: 0.5s;
 }
@@ -282,17 +300,17 @@ header,
 
 /* Scroll Bar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #e0e0e0; 
+  background: #bdbdbd; 
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #757575; 
+  background: #37474F; 
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #616161; 
+  background: #37474F; 
 }
 
 

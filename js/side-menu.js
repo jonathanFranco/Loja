@@ -25,10 +25,10 @@ function closeNav() {
 
       if ($(window).scrollTop() <= 500) {
         $("#btntop").css({ 'display': 'none', 'transition':'0.5s' });
-        $("#btn-fixed-style").css({ 'opacity': '0.7' });
+        $("#btn-fixed-style").css({ 'opacity': '0.3' });
       }else{
         $("#btntop").css({ 'display': 'block', 'transition':'0.5s' });
-        $("#btn-fixed-style").css({ 'opacity': '0.7' });
+        $("#btn-fixed-style").css({ 'opacity': '0.3' });
       }
 
     });
