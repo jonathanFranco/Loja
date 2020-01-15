@@ -121,7 +121,7 @@ header,
 
 .btn-menu {
   display: none;
-  color: #fff3e0;
+  color: #fff;
   float: left!important;
 }
 
@@ -154,7 +154,7 @@ header,
   top: 0px;
   right: 10px;
   font-size: 60px;
-  color: #fff3e0!important;
+  color: #fff!important;
 }
 .navbar-brand-mobile{
   display: none;
